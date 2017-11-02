@@ -1,0 +1,17 @@
+{#{% set image = fields.field_banner_image.content|render|replace({'byu/': '', '~mywork/' : ''})|striptags %}
+{% set link = fields.field_banner_link.content|render|striptags %}
+{% set site_host = url('<current>') %}
+{% set site_host = site_host|render|replace({'node': ''}) %}#}
+
+<li>
+    {#<img src="http://localhost/cisbyu/themes/cisbyu/images/fac1.jpg" alt="">#}
+    {{ fields.field_faculty_image.content }}
+    <div class="fac_detail"><h3>{{ fields.title.content }}</h3>
+        <p class="desc">{{ fields.field_faculty_designation.content }}</p>
+    <div class="itemIcon">
+            <a href="#" class="itemIcon1"></a>
+            <a href="#" class="itemIcon2"></a>
+            <a href="#" class="itemIcon3"></a>
+    </div>	
+    </div>
+</li>

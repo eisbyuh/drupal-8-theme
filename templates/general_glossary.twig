@@ -1,0 +1,41 @@
+<div class="view-link-index-groupedby-category">
+    <div class="views-row views-row-1 views-row-odd views-row-first">
+        <div class="views-field-phpcode">
+            {% set category = '' %}
+            {% set block_open = false %}
+            {% for row in rows %}
+                {% if row.columns['link_categories'].content|raw != category %} 
+                    {% if block_open %}
+                    </div>
+                </div>
+            </span>
+        {% endif %}
+        <span class="field-content">
+            <h3>{{ row.columns['link_categories'].content|raw }}</h3>
+            <div class="view-link-index-by-category">
+                <div class="view-content">
+                    {% set category = row.columns['link_categories'].content|raw %}
+                    {% set block_open = true %}
+                {% endif %}
+
+                <div class="views-row views-row-1 views-row-odd views-row-first">
+                    <div class="views-field-title">
+                        <span class="field-content"><h4><a href="{{ row.columns['field_link'].content }}">{{ row.columns['title'].content }}</a></h4></span>
+                    </div>
+                    <div class="views-field-body">
+                        <div class="field-content"><p>{{ row.columns['body'].content }}</p></div>
+                    </div>
+
+                    <div class="views-field-field-link-url">
+                        <span class="field-content"><a href="{{ row.columns['field_link'].content }}">{{ row.columns['field_link'].content }}</a></span>
+                    </div>
+                </div>
+            {% endfor %}
+            {% if block_open %}
+            </div>
+        </div>
+    </span>
+{% endif %}
+</div>
+</div>
+</div>

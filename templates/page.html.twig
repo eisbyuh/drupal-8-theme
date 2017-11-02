@@ -1,0 +1,24 @@
+{% include theme_path ~ '/templates/header.html.twig' %}
+
+<section class="Inner-Bx paddinn-50">
+    <div class="container">
+        {% if page.chairperson_faculty_list %}
+        {#<h2 class="sub-heading">Alaka’I</h1>#}
+        <ul class="itm-Box-Btm clearfix">
+        {{ page.chairperson_faculty_list }}
+        </ul>
+       <h2 class="sub-heading">Faculty</h2>
+       <ul class="itm-Box-Btm clearfix">
+        {{ page.faculty_list }}
+       </ul>
+       <h2 class="sub-heading">Staff</h2>
+       <ul class="itm-Box-Btm clearfix">
+        {{ page.staff_faculty_list }}
+       </ul>
+       {% else %}
+        {{ page.content }}       
+        {% endif %}
+    </div>
+</section>
+
+{% include theme_path ~ '/templates/footer.html.twig' %}

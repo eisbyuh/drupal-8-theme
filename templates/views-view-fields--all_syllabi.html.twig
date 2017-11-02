@@ -1,0 +1,14 @@
+<div class="col-sm-4 col-md-3 syllabi-itm">
+    <p>
+        {{ fields.field_syllabi_course_number.content }} :: 
+        {{ fields.field_syllabi_semester.content }}
+    </p>
+    <div class="syllabi-img">
+        <a href="{{ fields.field_syllabi_material.content|striptags }}" title="Download Syllabus in PDF format">
+            {{ fields.field_syllabi_image.content }}
+        </a>
+    </div>
+
+    <p>Instructor: {{ fields.field_syllabi_instructor.content }}<br>
+        Title: <a href="{{ fields.field_syllabi_course_number.content | getAlink('syllabi') }}" title="View other syllabi for Beginning Programming">{{ fields.field_syllabi_course.content }}</a></p>
+</div>

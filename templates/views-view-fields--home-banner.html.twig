@@ -1,0 +1,10 @@
+{% set image = fields.field_banner_image.content|render|replace({'byu/': '', '~mywork/' : ''})|striptags %}
+{% set link = fields.field_banner_link.content|render|striptags %}
+{% set site_host = url('<current>') %}
+{% set site_host = site_host|render|replace({'node': ''}) %}
+<div class="feature-image">
+    <a href="{{ link }}"><img src="{{ site_host ~ image }}" alt=""></a>
+</div>
+<div class="feature-description ">
+    {{ fields.body.content }}
+</div>

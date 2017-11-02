@@ -1,0 +1,25 @@
+{#{{ kint(node) }}#}
+<div id="block-eisbyuh-content" class="block block-system block-system-main-block">
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="degree_imageB">
+                            <img src="{{ file_url(node.field_degrees_image.entity.fileuri) }}">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="degree_details">
+                            <p>{{ node.body.value|striptags }}</p>
+                            <ul>
+                                <li><a href="https://cisbeta.byuh.edu/syllabi/{{ abs_path }}">Syllabi</a></li>
+                                <li><a href="javascript:void(0)">major Requirements</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

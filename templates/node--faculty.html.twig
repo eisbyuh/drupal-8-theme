@@ -1,0 +1,97 @@
+{# kint(node) #}
+<div id="block-eisbyuh-content" class="block block-system block-system-main-block">
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2">
+                        <div class="faculty_image">
+                            <img src="{{ file_url(node.field_faculty_image.entity.fileuri) }}">
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-10">
+                        <div class="faculty_details">
+                           {# <h3>{{ node.title.value }}</h3>#}
+                            
+ 			      <p>&nbsp;</p>
+                    <p class="desc">{{ node.field_faculty_designation.value }}
+                    {% if node.field_field_faculty_designation2.value %}
+                    /{{ node.field_field_faculty_designation2.value }}</p>
+                    {% else %}
+                    </p>
+                    {% endif %}
+    				{% if node.field_faculty_office_address.value %}
+    				<p class="desc"><strong>Office:</strong> {{ node.field_faculty_office_address.value }}</p>
+    				{% endif %}
+    				{% if node.field_faculty_phone.value %}
+    				<p class="desc"><strong>Phone:</strong> {{ node.field_faculty_phone.value }}</p>
+    				{% endif %}
+    				{# {% if node.field_faculty_fax.value %}
+    				<p class="desc"><strong>Fax:</strong> {{ node.field_faculty_fax.value }}</p>  
+    				{% endif %} #}
+             <a href="mailto:{{ node.field_faculty_email.value }}">{{ node.field_faculty_email.value }}</a>
+				    <p class="desc"><a href='{{ node.field_faculty_profile_url.0.url }}' target='_blank'>{{ node.field_faculty_profile_url.0.url }}</a></p>
+            {% if (node.field_faculty_facebook_profile.value or node.field_faculty_linkedin_profile.value or node.field_faculty_youtube_cahnnel.value) %}  
+            <h6 class="ac-title">Additional Contact Type</h6>
+            {% endif %} 
+            {% if node.field_faculty_facebook_profile.value %} 
+            <p class="desc"><strong>Facebook Profile:</strong> <a href='{{ node.field_faculty_facebook_profile.value }}' target='_blank'>{{ node.field_faculty_facebook_profile.value }}</a></p> 
+            {% endif %} 
+            {% if node.field_faculty_linkedin_profile.value %} 
+            <p class="desc"><strong>Linkedin Profile:</strong> <a href='{{ node.field_faculty_linkedin_profile.value }}' target='_blank'>{{ node.field_faculty_linkedin_profile.value }}</a></p>
+            {% endif %}  
+            {% if node.field_faculty_youtube_cahnnel.value %} 
+            <p class="desc"><strong>YouTube Cahnnel:</strong> <a href='{{ node.field_faculty_youtube_cahnnel.value }}' target='_blank'>{{ node.field_faculty_youtube_cahnnel.value }}</a></p> 
+            {% endif %}                         
+              </div>
+                    </div>
+                                                 
+                </div>
+            </div>
+        </div>
+           <div class="cis-tabs-Bx">
+                    <ul class="nav nav-tabs">
+                        {% if node.field_faculty_about.value %}
+                        <li class="active"><a data-toggle="tab" href="#About">About</a></li>
+                        {% endif %}
+                        {% if node.field_faculty_classes.value %}
+                        <li><a data-toggle="tab" href="#Classes">Classes</a></li>
+                        {% endif %}
+                        {% if node.field_faculty_publications.value %}
+                        <li><a data-toggle="tab" href="#Publications">Publications</a></li>
+                        {% endif %}
+                        {% if node.field_faculty_certification_awrd.value %}
+                        <li><a data-toggle="tab" href="#CertificationandAwards">Certification & Awards</a></li>
+                        {% endif %}
+                        {% if node.field_faculty_other_details.value %}
+                        <li><a data-toggle="tab" href="#Other">Other</a></li>
+                        {% endif %}
+                    </ul>
+                    <div class="tab-content cont-cis-tab">
+                        {% if node.field_faculty_about.value %}
+                        <div id="About" class="tab-pane fade in active">
+                            <h3>About</h3>
+                            {{ node.field_faculty_about.value|raw }}
+                        </div>
+                        {% endif %}
+                        <div id="Classes" class="tab-pane fade">
+                            <h3>Classes</h3>
+                            {{ node.field_faculty_classes.value|raw }}
+                        </div>
+                        <div id="Publications" class="tab-pane fade">
+                            <h3>Publications</h3>
+                            {{ node.field_faculty_publications.value|raw }}
+                        </div>
+                        <div id="CertificationandAwards" class="tab-pane fade">
+                            <h3>Certification & Awards</h3>
+                            {{ node.field_faculty_certification_awrd.value|raw }}
+                        </div>
+                        <div id="Other" class="tab-pane fade">
+                            <h3>Other</h3>
+                            {{ node.field_faculty_other_details.value|raw }}
+                        </div>
+                    </div>
+                </div>
+        
+    </div>
+</div>

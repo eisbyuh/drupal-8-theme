@@ -1,0 +1,16 @@
+global-styling:
+  version: VERSION
+  css:
+      theme:
+        css/bootstrap.css: { media: 'all' }
+        css/global-style.css: { media: 'all' }
+        css/media-queries.css: { media: 'all' }
+        https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:300i,400,400i,500,500i,600,600i,700,700i: { media: 'all', type: external, minified: true }
+  js:
+#      js/jquery-1.11.0.js: {}
+      js/bootstrap.js: {}
+      js/jquery.carouFredSel-5.5.0-packed.js: {}
+      js/cis.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

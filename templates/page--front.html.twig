@@ -1,0 +1,141 @@
+{% include theme_path ~ '/templates/header.html.twig' %}
+
+<!--Banner Start -->
+    
+<section class="banner-wrapper">
+    {#        <img src="http://localhost/cisbyu/themes/cisbyu/images/banner1.jpg" alt="">#}
+    {{ page.home_banner }}
+</section>
+
+<!--Banner end -->
+
+<!-- Content start -->
+
+<section class="padd-110">
+    <div class="container">
+        <div class="top-infobdy">
+            {{ page.home_announcements }}
+            {#            <h2>Announcements</h2>#}
+            {#<p>We would like to welcome and recognize our new online instructor - Eric Simonsen. Eric has always had an interest in working with Computers and Technology. He graduated from Brigham Young University Provo in Public Relations and worked for several years in graphic design and web publishing during the birth of the Internet. He then pursued an advanced degree at the University of Texas at Dallas where he received Master of Business and Master of Information Systems degrees.<br/><br/>
+                Throughout his career, Eric has focused on ways that he can use technology to make businesses run more efficiently. He has obtained both the Project Management Professional as well as the Agile Certified Practitioner certifications from the Project Management Institute of America.<br/><br/>Eric has always had a love of teaching, both personally and professionally. He previously taught Information Systems classes at Austin Community College before joining BYU Hawaii as an Online Adjunct Professor. Eric also serves as a Merit Badge Counselor for the Boy Scouts of America.<br/><br/>In his spare time, Eric likes to barbecue, and spend time with his 5 children. Eric grew up in Austin, Texas, and lived there most of his life, but recently relocated to Eagle Mountain, Utah.</p>
+
+                <a href="#">read talk</a>#}
+        </div>
+    </div>
+    <div class="degree_prog hw_auto">
+        <div class="container">
+            {{ page.home_degrees_heading }}
+            {#<h2>Degree Programs</h2>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse<br/> molestie consequat vel illum dolore eu feugiat nulla facilisis...</p>#}
+            <ul class="itm-Box-Btm clearfix">
+                {{ page.home_degrees }}
+                {#<li>
+                    <div class="item-container">
+                        <div class="item-image">
+                            <a href="#"><img src="http://localhost/cisbyu/themes/cisbyu/images/img1.jpg" alt=""></a>
+                        </div>
+                        <div class="item-content">
+                            <h5><a href="#">Computer Science</a></h5>
+                            <p>The mission of the Computer Science department is to teach students basic computer science concepts, help them develop computer-programming skills...</p>
+
+
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-container">
+                        <div class="item-image">
+                            <a href="#"><img src="http://localhost/cisbyu/themes/cisbyu/images/img2.jpg" alt=""></a>
+                            <div class="imageOverlay">
+                                <a href="#">click</a>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <h5><a href="#">Information Systems</a></h5>
+                            <p>The mission of the Information Systems Department is to prepare students for exciting computer-related work in the field of Information Technology (IT)...</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-container">
+                        <div class="item-image">
+                            <a href="#"><img src="http://localhost/cisbyu/themes/cisbyu/images/img3.jpg" alt=""></a>
+                        </div>
+                        <div class="item-content">
+                            <h5><a href="#">Information Technology</a></h5>
+                            <p>Information Technology prepares students to design, install, manage and maintain the computing
+                                systems on which organizations depend...</p>
+                        </div>
+                    </div>
+                </li>#}
+
+            </ul>
+        </div>
+    </div>
+    <div class="galleryArea">
+        <div class="container">
+            {#<h2>Our Faculty</h2>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse<br/> molestie consequat vel illum dolore eu feugiat nulla facilisis...</p>#}
+            {{ page.home_faculty_heading }}
+            {# Uncomment the following DIV and UL for enable faculty slider #}
+               {# <div class="list_carousel responsive hw_auto">
+                    <ul id="foo4">  #}
+            {# END #}
+                    {{ page.home_faculty }}
+                    {#<li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac1.jpg" alt="">
+                        <div class="fac_detail"><h3>James D. Lee</h3>
+                            <p class="desc">Dean of The College of Business, Computing & Government / SAP Program Director / Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac2.jpg" alt="">
+                        <div class="fac_detail"><h3>Joshua Smith</h3>
+                            <p class="desc">Director of Student Internships and Placement / Assistant Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac3.jpg" alt="">
+                        <div class="fac_detail"><h3>Geoff Draper</h3>
+                            <p class="desc">Computer Science Program Lead / Associate Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac4.jpg" alt="">
+                        <div class="fac_detail"><h3>Aaron Curtis</h3>
+                            <p class="desc">Information Technology Program Lead / Associate Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac1.jpg" alt="">
+                        <div class="fac_detail"><h3>James D. Lee</h3>
+                            <p class="desc">Dean of The College of Business, Computing & Government / SAP Program Director / Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac2.jpg" alt="">
+                        <div class="fac_detail"><h3>Joshua Smith</h3>
+                            <p class="desc">Director of Student Internships and Placement / Assistant Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac3.jpg" alt="">
+                        <div class="fac_detail"><h3>Geoff Draper</h3>
+                            <p class="desc">Computer Science Program Lead / Associate Professor</p>
+                        </div>
+                    </li>
+                    <li><img src="http://localhost/cisbyu/themes/cisbyu/images/fac4.jpg" alt="">
+                        <div class="fac_detail"><h3>Aaron Curtis</h3>
+                            <p class="desc">Information Technology Program Lead / Associate Professor</p>
+                        </div>
+                    </li>#}
+            {# Uncomment the following DIV and UL for enable faculty slider #}
+                {# </ul>
+                <div class="clearfix"></div>
+                <a id="prev4" class="prev" href="#">&nbsp;</a> 
+                <a id="next4" class="next" href="#">&nbsp;</a> 
+                </div> #}
+            {# END #}
+        </div>
+    </div>
+</section>
+
+<!-- Content end -->
+
+<!-- Wrapper end -->
+
+{% include theme_path ~ '/templates/footer.html.twig' %}

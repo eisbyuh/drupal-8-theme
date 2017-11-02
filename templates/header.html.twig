@@ -1,0 +1,52 @@
+<!-- Wrapper start -->
+<div class="wrapper">
+    <!-- Header start -->
+    <header class="header-Box">
+        <div class="container">
+            <div class="lf-tpBox">
+                <div class="logo">
+                    {#<a href="#"><img src="http://localhost/cisbyu/themes/cisbyu/images/logo.png" alt="Logo" title="Logo" class="img-responsive"/></a> #}
+                    <a href="https://wwwbeta.byuh.edu/">{{ page.site_logo }}</a>
+                    <div class="txt-lfT"><a href="{{ front_page }}">{{ site_name }}</a></div>
+                </div>
+            </div>
+            <div class="rh-tpBox">
+                {#<div class="login-div">
+                    <a href="#">Login</a>
+                </div>#}
+{#                <div id="search-menu">#}
+                    <div class="search" id="search-container">
+                        <form role="search" method="get" action="http://mydevfactory.com/~mywork/myfashion/">
+                            <input value="" name="s" placeholder="Search our site" type="text">
+                            <button type="submit" class="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        {#<script>
+                            (function () {
+                                var cx = '003022581560073454990:czutdqmezpm';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:searchbox></gcse:searchbox>
+                        <div class="gcse-search"></div>#}
+                    </div>
+{#                </div>#}
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Navigation start -->
+    <nav class="navigationWide">
+        <div class="container">
+            <div class="toggle-icon"><span></span><span></span><span></span></div>
+            <div class="menu-Bx">
+                {{ page.nav_menu }}
+            </div>
+        </div>
+    </nav>    
+    <!-- Navigation end -->

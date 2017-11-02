@@ -1,0 +1,209 @@
+    /*Extra small device (XS-More refine)*/
+    @media (min-width: 480px) {	
+
+    }
+
+    /*Extra small device (XS)*/
+    @media (min-width: 768px) {
+
+    }
+
+
+    /*Small device (SD)*/
+    @media (min-width: 992px) {}
+
+   
+
+    /*Medium device (MD)*/
+    @media (min-width: 1200px) {
+
+    }
+
+  
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        .cmn-ft-info h2{font-size: 20px;}
+        .item-content h5{font-size: 20px;}
+		.top-infobdy h2{font-size: 20px;}
+		.degree_prog h2{font-size: 20px;}
+		
+        .navigationWide .container{padding: 0; width: inherit;}
+        .header-Box .container{width: inherit;}
+        .padd-110 .container{width: inherit;}
+        .footerTop .container, .footerBtm .container{width: inherit;}
+        .itm-Box-Btm{text-align: center;}
+		.itm-Box-Btm li{width: 327px;}
+        
+
+    }
+    @media only screen and (max-width : 1200px) {
+        li.extra-item{
+            width: 48.8%;
+        }
+    }
+
+     @media only screen and (max-width : 1199px) {
+      .itemIcon a{
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+      }
+      .fac_detail{
+        min-height: 200px;
+      }
+    }
+    @media only screen and (max-width : 991px) {
+      .itemIcon a{
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+      }
+      .fac_detail{
+        min-height: 200px;
+      }
+      .galleryArea h3{
+        font-size: 20px;
+      }
+      .galleryArea p.desc{
+        font-size: 12px;
+      }
+    }
+
+
+     @media only screen and (max-width : 1023px) {
+        .navigationWide .container{padding: 0;}
+        .login-link-Mob{display: block;}
+        /*.rh-tpBox{display: none;}*/
+        .toggle-icon{top:32px;}
+        .cmn-ft-info h2{padding-top: 30px;}
+        .footerTop{padding: 20px 0 50px 0;}
+        .Inner-Bx h1.page-title{font-size: 40px;}
+         .txt-lfT{width: 300px;}
+         .search {margin-right: 40px;}
+         
+       }
+  @media only screen and (max-width : 991px) {
+
+            .extra-item .fcty-cont{
+            width: 100%;
+            overflow: hidden;
+            }
+            .extra-item .item-container .item-image{
+            width: 100%;
+            margin-right: 0px;
+            }
+            .fcty-img img{
+                height: 280px;
+            }
+     }
+   
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px){
+       .itm-Box-Btm li{width: 100%;}
+    }
+
+    @media only screen and (max-width : 767px){
+        .Inner-Bx .degree_details{margin-top: 25px;}
+        .degree_imageB{text-align: center;}
+        .paddinn-50{padding: 40px 0;}
+        .syllabi-itm{margin-bottom:25px;}
+        .faculty_details{margin-top: 25px;}
+        .faculty_details h3{font-size: 20px;}
+        .f-logo{font-size: 24px; line-height: 28px;}
+        /* li.extra-item{width: 100%;}*/
+        
+        .faculty_image{
+            text-align: center;
+        }
+        .faculty_image img{
+            width: 300px;
+            height: 300px;
+        }
+        .faculty_details{
+            text-align: center;
+        }
+        .faculty_details p{
+            text-align: center;
+        }
+
+    }
+
+    @media only screen and (max-width : 700px) {
+        .txt-lfT{ padding-left: 20px; font-size:13px;}
+        .f-logo{font-size: 24px; line-height: 28px;}
+        .item-content{height: inherit !important;}
+        .top-infobdy{text-align: center; padding: 20px;}
+        .padd-110{padding: 15px 0 60px 0;}
+         
+        .logo{height: 70px;}
+        .logo a{width: 75px;}
+        .toggle-icon{top:26px;}
+		
+		.login-div{float: left; width: 48%; margin: 0 auto;}
+		 .login-div a{padding: 0;}
+		.ft-info p{font-size: 16px;}
+        .Inner-Bx h1.page-title{font-size: 35px;}
+        .rh-tpBox{width: 100%; padding-bottom: 12px;}
+        .search{float: none; margin: 0 auto;}
+        .txt-lfT{width: 175px;}
+        .sub-heading{font-size: 24px; text-align: center;}
+
+
+        
+    }
+
+    @media only screen and (max-width : 600px) {
+        li.extra-item{
+            width: 100%;
+        }
+        .fcty-img img{
+            height: 290px;
+            width: 300px;
+        }
+        .fcty-cont{
+            text-align: center;
+        }
+        .fcty-cont p{
+            text-align: center!important;
+        }
+        .detailLft{
+            width: 100%;
+        }
+        .detailLft img{
+            width: 100%;
+        }
+        .detailsRgt{
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 20px;
+        }
+    }
+
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .item-content h5{font-size: 20px;}
+		.top-infobdy h2{font-size: 40px;}
+		.degree_prog h2{font-size: 40px;}
+        .itm-Box-Btm li{width: auto; display: block;}
+        span.txt-D{display: none;}
+         span.txt-M{display: inherit;} 
+		
+		.list_carousel li{width: 100% !important; margin: 0; }
+		.fac_detail{width: 264px;}
+		
+		.login-div{float: none; width: 90%; margin: 0 auto;}
+		 .login-div a{padding: 0;}
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 360px) {
+		.search input[type="text"]{width: 82%;}  
+        
+    }
+
+@media only screen and (max-width : 320px) {
+	.search input[type="text"]{width: 81%;}   
+        
+    }
